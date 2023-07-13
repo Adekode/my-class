@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my class picture </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/7cad1bd9d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+     <div>
+    <div class="header">
+        <nav><a href="index.html"><img src="./asset/1677236975996logo (2).png"></a>
+         <div class="nav-links" id="navLinks">
+             <i class="fa fa-times" onclick="hideMenu()"></i>
+             
+             <ul> 
+                 <li><a href="index.html">HOME</a></li>
+                 <li><a href="Album.html">Album</a></li>
+                 <li><a href="comment.html">comment</a></li>
+                 <li><a href="contact.html">CONTACT</a></li>
+ 
+             </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </div>
+        <!-- main work -->
+        <div class="lightbox">
+            <div class="wrapper">
+             <header>
+                <div class="photographer">
+                    <i class="uil uil-camera"></i>
+                    <span>500level Electrical</span>
+                   </div>
+                   <div class="buttons">
+                    <i class="uil uil-import"></i>
+                    <i class="uil uil-times"></i>
+                   </div>
+             </header>
+             <div class="preview-img"></div>
+             <div class="img"><img src="./asset/adecode1.png" alt="preview-img"></div>
+            </div>
+        </div>
+       <section class="search">
+          <img src="./images/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt=" search-img">
+          <div class="voltage">
+            <h1>images Gallery 500level Electrical</h1>
+            <p>search and download any images within a second</p>
+            <div class="search-box">
+             <i class="uil uil-search"></i> 
+             <input type="text" placeholder="search images">  
+            </div>
+          </div>
+       </section> 
+       <section class="gallery">
+        <ul class="images">
+            <li class="cards">
+                <img src="images/IMG_2235.jpeg" alt=""> 
+            <div class="details"> 
+             <div class="photographer">
+              <i class="uil uil-camera"></i>
+              <span>500level Electrical</span>
+             </div>
+             <button><i class="uil uil-import"></i></button>
+            </div>
+            </li>
+            <li class="cards"><img src="images/IMG_1816.jpeg" alt=""> </li>
+            <li class="cards"><img src="asset/IMG-20230612-WA0028.jpg" alt=""> </li>
+            <li class="cards"><img src="asset/IMG-20230612-WA0035.jpg" alt=""> </li>
+            <li class="cards"><img src="asset/IMG-20230612-WA0024.jpg" alt=""> </li>
+            <li class="cards"><img src="asset/IMG-20230612-WA0037.jpg" alt=""> </li>
+            <li class="cards"><img src="asset/adecode1.png" alt=""> </li>
+            <li class="cards"><img src="asset/IMG-20230612-WA0031.jpg" alt=""> </li>
+            <li class="cards"><img src="asset/IMG-20230612-WA0033.jpg" alt=""> </li>
+            <li class="cards"><img src="images/IMG-20230612-WA0038.jpg" 
+            alt=""> </li>
+            <li class="cards"><img src="asset/IMG-20230612-WA0023.jpg" alt=""> </li>
+            <li class="cards"><img src="images/IMG-20230609-WA0022.jpg" alt=""> </li>
+        </ul>
+        <button class="load-more">load-more</button>
+        </section>
+
+     </div>
+         <!--------- js --- -->
+         <script>
+            var navLinks = document.getElementById("navLinks");
+           
+           function showMenu(){
+               navLinks.style.right = "0";
+           }
+               function hideMenu(){
+               navLinks.style.right = "-200px";
+           }
+           
+           </script>
+        
+       </body>
+       </html>

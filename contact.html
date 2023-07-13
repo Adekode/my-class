@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my class picture </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/7cad1bd9d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div>
+    <div class="header">
+        <nav><a href="index.html"><img src="./asset/1677236975996logo (2).png"></a>
+         <div class="nav-links" id="navLinks">
+             <i class="fa fa-times" onclick="hideMenu()"></i>
+             
+             <ul> 
+                 <li><a href="index.html">HOME</a></li>
+                 <li><a href="Album.html">Album</a></li>
+                 <li><a href="comment.html">comment</a></li>
+                 <li><a href="contact.html">CONTACT</a></li>
+ 
+             </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </div>
+
+  
+      </div>
+         <!--------- js --- -->
+         <script>
+            var navLinks = document.getElementById("navLinks");
+           
+           function showMenu(){
+               navLinks.style.right = "0";
+           }
+               function hideMenu(){
+               navLinks.style.right = "-200px";
+           }
+           
+           </script>
+       
+       </body>
+       </html>
+
+   
